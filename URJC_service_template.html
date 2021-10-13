@@ -1,38 +1,107 @@
 <html>
     <head>
         <style>
-            code {
-            background-color: #eee;
-            border: 1px solid #999;
-            display: block;
-            padding: 20px;
+
+            body {
+                background-color: rgb(246, 245, 245);
             }
 
+            header {
+                background-color: #e90129;
+                color: white;
+                padding: 30px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            
+            subbody {
+                line-height: 40px;
+                margin-left: 40px; 
+                margin-right: 40px;
+                margin-top: 20px;
+                display:block;
+                font-family: 'Inter', sans-serif;
+                font-size: 20px;
+            }
+
+
+            data_square {
+                background-color: white;
+                border: 1px solid black;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: block;
+            }
+
+            code {
+                background-color: #eee;
+                border: 3px solid black;
+                padding: 30px;
+                margin-top: 10px;
+                margin-left: 30px;
+                margin-bottom: 10px;
+                width: 90%;
+                font-family: 'Consolas', sans-serif;
+                display: block;
+
+            }
+
+            description {
+                background-color: #eee;
+                border: 3px solid black;
+                margin-top: 10px;
+                margin-left: 30px;
+                margin-bottom: 10px;
+                width: 90%;
+                padding: 30px;
+                display: block;
+            }
+
+
         </style>
-
-        
     </head>
-    <body>
-        <h1>Universidad Rey Juan Carlos</h1>
-        <h2>Hoja de servicio: Bioinformática</h2>
-        <b>Fecha de solicitud:</b> Dia-Mes-Año <br>
-        <b>Solicitante:</b> Investigador <br>
-        <b>Identificador de las lecturas implicadas:</b> <br>
-        <b>Identificador del servicio:</b> SRV_URJC_1<br>
-        <b>Descripción:</b><br>
-        <b>Programas y versiones implicados:</b><br>
-        <code>
-            Tal <br>
-            Tal otro <br>
-            Ese <br>
-        </code> <br>
-        <b>Protocolo: </b><br>
-        <b>Metadatos: </b><br>
-        <code>
-            aaaaaaaaaaaaaaaaaaa<br>
-        </code><br>
-        <b>Fecha de entrega:</b><br>
 
+    <body>
+        <header>
+            <h1>Universidad Rey Juan Carlos</h1>
+            <h2>Hoja de servicio: Bioinformática</h2>
+        </header>
+        <subbody>
+            <data_square>
+                <b>Fecha de solicitud:</b> Dia-Mes-Año <br>
+                <b>Fecha de entrega:</b> Dia-Mes-Año<br>
+                <b>Solicitante:</b> Investigador <br>
+                <b>Contacto del solicitante:</b> <mail>Correo del investigador</mail><br>
+                <b>Centro del solicitante:</b> Inicialmente, Universidad Rey Juan Carlos <br>
+                <b>Trabajo realizado por:</b> Bioinformático que sea <br>
+                <b>Contacto:</b> <mail>@urjc.es</mail>
+            </data_square>
+            <br>
+            <data_square>
+                <b>Identificador del servicio:</b> SRV_URJC_1<br>
+                <b>Identificador de las lecturas implicadas:</b> <br>
+                <b>Descripción del experimento:</b><br>
+                <description>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Maecenas vitae nisi sit amet ipsum placerat lacinia. Nam consequat dui id nulla faucibus lobortis. Nulla quis mollis purus. Integer rutrum vel risus vitae iaculis. Nam finibus magna a efficitur pulvinar. Mauris non metus in justo ornare molestie. In est ex, mattis sit amet euismod eget, finibus at quam. Praesent scelerisque ac odio in venenatis. Cras pellentesque tortor id malesuada pellentesque.
+                </description>
+                <b>Programas y versiones implicados:</b><br>
+                <code>
+                    Tal programa, V1.2 <br>
+                    Tal otro, V.1.3 <br>
+                    Aquel, V.0.11 <br>
+                </code>
+                <b>Protocolo: </b><br>
+                    <description> 
+                    Proin sit amet cursus nisl. Suspendisse rutrum lacus eget leo vehicula, eget bibendum sapien luctus. Donec volutpat ultricies tellus, eget tincidunt purus posuere et. Sed id imperdiet nisi. Nullam congue, arcu suscipit vestibulum dictum, justo nulla efficitur turpis, ac tincidunt metus orci vitae nisl. Vestibulum porta finibus blandit. Nam id orci consequat, finibus lacus vitae, lobortis massa. Donec imperdiet elementum nibh, rutrum tincidunt nisi molestie a. Mauris bibendum sapien vitae diam feugiat fermentum. Fusce imperdiet diam vulputate lorem tincidunt, ac porta nunc posuere. Etiam aliquam id leo dapibus elementum.
+                    </description>
+                <b>Metadatos: </b><br>
+                <code>
+                    Cras a lacinia risus. Integer tristique ante quis tellus luctus, a porttitor odio accumsan. Etiam volutpat pharetra urna, quis lacinia diam. Vestibulum efficitur, erat eget convallis mattis, nulla turpis sodales purus, quis aliquam quam elit eu mauris. Nunc euismod erat a sapien commodo, condimentum euismod mi volutpat. Nulla dignissim lorem a dolor elementum, in accumsan est molestie. Nam eu nibh mattis, tincidunt nisi ut, rhoncus urna.
+                </code>
+            </data_square>
+
+
+        </subbody>
 
     </body>
 
