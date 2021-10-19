@@ -1,0 +1,180 @@
+<html>
+    <head>
+        <style>
+
+            body {
+                background-color: rgb(246, 245, 245);
+            }
+
+            header {
+                background-color: #e90129;
+                color: white;
+                padding: 30px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            
+            subbody {
+                line-height: 40px;
+                margin-left: 40px; 
+                margin-right: 40px;
+                margin-top: 20px;
+                display:block;
+                font-family: 'Inter', sans-serif;
+                font-size: 20px;
+            }
+
+
+            data_square {
+                background-color: white;
+                border: 1px solid #909090;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: block;
+            }
+
+            code, programs {
+                background-color: #eee;
+                border: 3px solid #909090;
+                padding: 30px;
+                margin-top: 10px;
+                margin-left: 30px;
+                margin-bottom: 10px;
+                width: 90%;
+                font-family: 'Consolas', sans-serif;
+                display: none;
+            }
+
+            description {
+                background-color: #eee;
+                border: 3px solid #909090;
+                margin-top: 10px;
+                margin-left: 30px;
+                margin-bottom: 10px;
+                width: 90%;
+                padding: 30px;
+                display: block;
+            }
+
+            input[type=checkbox]:checked ~ code {
+                display: block
+            }
+
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Universidad Rey Juan Carlos</h1>
+            <h2>Hoja de servicio: Bioinformática</h2>
+        </header>
+        <subbody>
+            <data_square>
+                <b>Fecha de solicitud:</b> 16-10-2021 <br>
+                <b>Fecha de entrega:</b> 17-10-2021<br>
+                <b>Solicitante:</b> Natalia González Benítez <br>
+                <b>Contacto del solicitante:</b> <mail>natalia.gonzalez@urjc.es</mail><br>
+                <b>Centro del solicitante:</b> Universidad Rey Juan Carlos <br>
+                <b>Trabajo realizado por:</b> Guillermo Jorge Gorines Cordero <br>
+                <b>Contacto:</b> <mail>guillermo.gorines@urjc.es</mail>
+            </data_square>
+            <br>
+            <data_square>
+                <b>Identificador del servicio:</b> SRV_URJC_0001<br>
+                <b>Identificador de las lecturas implicadas:</b> RUN_URJC_0001 <br>
+                <b>Muestras implicadas:</b><br>
+                <input type="checkbox" id="samples_hide" checked="checked"> Mostrar <br>
+                <code>
+                C-1-Cistus_S14_L001_R <br>	
+                C-2-Cistus_S21_L001_R <br>
+                C-3-Cistus_S24_L001_R <br>
+                T120-1-Cistus_S12_L001_R <br>
+                T120-2-Cistus_S11_L001_R <br>
+                T120-3-Cistus_S22_L001_R <br>
+                C-11-AND-PL-31-Cistus_S4_L001_R	<br>
+                C-14-AND-PL-41-Cistus_S2_L001_R	<br>
+                C-15-AND-PL-44-Cistus_S6_L001_R	<br>
+                C-16-AND-PL-47-Cistus_S7_L001_R	<br>
+                C-20-AND-PL-59-Cistus_S17_L001_R <br>
+                C-23-BAD-PL-68-Cistus_S8_L001_R	<br>
+                C-24-BAD-PL-71-Cistus_S18_L001_R <br>
+                C-25-BAD-PL-74-Cistus_S5_L001_R	<br>
+                C-28-BAD-PL-83-Cistus_S19_L001_R <br>
+                C-30-BAD-PL-89-Cistus_S25_L001_R <br>
+                T120-11-AND-PL-214-Cistus_S1_L001_R <br>
+                T120-12-AND-PL-217-Cistus_S9_L001_R <br>
+                T120-16-AND-2-PL-229-Cistus_S3_L001_R <br>
+                T120-19-AND-PL-238-Cistus_S23_L001_R <br>
+                T120-21-BAD-PL-245-Cistus_S26_L001_R <br>
+                T120-25-BAD-PL-257-Cistus_S20_L001_R <br>
+                T120-28-BAD-PL-266-Cistus_S10_L001_R <br>
+                T120-4-VALD-PL-192-Cistus_S15_L001_R <br>
+                T120-6-VALD-PL-198-Cistus_S16_L001_R <br>
+                T120-8-VALD-3-PL-205-Cistus_S13_L001_R
+                </code>
+                <b>Metadatos: </b><br>
+                <input type="checkbox" checked="checked "id="metadata_hide"> Mostrar <br>
+                <code>
+                    sample-id	Sample from	Treatment<br>
+                    C-1-Cistus_S14_L001_R	Seed	Control<br>
+                    C-2-Cistus_S21_L001_R	Seed	Control<br>
+                    C-3-Cistus_S24_L001_R	Seed	Control<br>
+                    T120-1-Cistus_S12_L001_R	Seed	120_10min<br>
+                    T120-2-Cistus_S11_L001_R	Seed	120_10min<br>
+                    T120-3-Cistus_S22_L001_R	Seed	120_10min<br>
+                    C-11-AND-PL-31-Cistus_S4_L001_R	Grown plant	Control<br>
+                    C-14-AND-PL-41-Cistus_S2_L001_R	Grown plant	Control<br>
+                    C-15-AND-PL-44-Cistus_S6_L001_R	Grown plant	Control<br>
+                    C-16-AND-PL-47-Cistus_S7_L001_R	Grown plant	Control<br>
+                    C-20-AND-PL-59-Cistus_S17_L001_R	Grown plant	Control<br>
+                    C-23-BAD-PL-68-Cistus_S8_L001_R	Grown plant	Control<br>
+                    C-24-BAD-PL-71-Cistus_S18_L001_R	Grown plant	Control<br>
+                    C-25-BAD-PL-74-Cistus_S5_L001_R	Grown plant	Control<br>
+                    C-28-BAD-PL-83-Cistus_S19_L001_R	Grown plant	Control<br>
+                    C-30-BAD-PL-89-Cistus_S25_L001_R	Grown plant	Control<br>
+                    T120-11-AND-PL-214-Cistus_S1_L001_R	Grown plant	120_10min<br>
+                    T120-12-AND-PL-217-Cistus_S9_L001_R	Grown plant	120_10min<br>
+                    T120-16-AND-2-PL-229-Cistus_S3_L001_R	Grown plant	120_10min<br>
+                    T120-19-AND-PL-238-Cistus_S23_L001_R	Grown plant	120_10min<br>
+                    T120-21-BAD-PL-245-Cistus_S26_L001_R	Grown plant	120_10min<br>
+                    T120-25-BAD-PL-257-Cistus_S20_L001_R	Grown plant	120_10min<br>
+                    T120-28-BAD-PL-266-Cistus_S10_L001_R	Grown plant	120_10min<br>
+                    T120-4-VALD-PL-192-Cistus_S15_L001_R	Grown plant	120_10min<br>
+                    T120-6-VALD-PL-198-Cistus_S16_L001_R	Grown plant	120_10min<br>
+                    T120-8-VALD-3-PL-205-Cistus_S13_L001_R	Grown plant	120_10min
+                </code>
+
+                <b>Descripción del análisis:</b><br>
+                <description>
+                    Control de calidad e identificación de taxones microbianos (RNA 16S)
+                </description>
+                <b>Programas y versiones implicados:</b><br>
+                <code style= display:block>
+                    <b>Control de calidad:</b> FastP (V );  <br>
+                    <b>Visualización del control de calidad:</b>FastQC (v), MultiQC (v)<br>
+                    <b>Identificación: </b>QIIME2 (v)<br>
+                    <b>Base de datos:</b> SILVA, asignación mediante Naive Bayes entrenado con esta base de datos
+                    <br>
+                </code>
+                <b>Protocolo: </b><br>
+                    <description>
+                        Protocolo realizado siguiendo los pasos recogidos en el repositorio <a href="https://github.com/GuilleGorines/16S-Qiime-protocol">https://github.com/GuilleGorines/16S-Qiime-protocol</a>
+                    </description>
+                <b>Resultados entregados:</b><br>
+                    <description>
+                        <ul>
+                            <li>AAAAAA</li>
+                            <li></li>
+
+                        </ul>
+
+                    </description>
+            </data_square>
+
+
+        </subbody>
+
+    </body>
+
+</html>
