@@ -1,0 +1,130 @@
+<html>
+    <head>
+        <style>
+
+            body {
+                background-color: rgb(246, 245, 245);
+            }
+
+            header {
+                background-color: #e90129;
+                color: white;
+                padding: 30px;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+            
+            subbody {
+                line-height: 40px;
+                margin-left: 40px; 
+                margin-right: 40px;
+                margin-top: 20px;
+                display:block;
+                font-family: 'Inter', sans-serif;
+                font-size: 20px;
+            }
+
+            data_square {
+                background-color: white;
+                border: 1px solid #909090;
+                padding-left: 20px;
+                padding-top: 10px;
+                padding-bottom: 10px;
+                display: block;
+            }
+
+            code, programs {
+                background-color: #eee;
+                border: 3px solid #909090;
+                padding: 30px;
+                margin-top: 10px;
+                margin-left: 30px;
+                margin-bottom: 10px;
+                width: 90%;
+                font-family: 'Consolas', sans-serif;
+                display: none;
+            }
+
+            description {
+                background-color: #eee;
+                border: 3px solid #909090;
+                margin-top: 10px;
+                margin-left: 30px;
+                margin-bottom: 10px;
+                width: 90%;
+                padding: 30px;
+                display: block;
+            }
+
+            input[type=checkbox]:checked ~ code {
+                display: block
+            }
+
+        </style>
+    </head>
+
+    <body>
+        <header>
+            <h1>Universidad Rey Juan Carlos</h1>
+            <h2>Hoja de servicio: Bioinformática</h2>
+        </header>
+        <subbody>
+            <data_square>
+                <b>Fecha de solicitud:</b> Día-Mes-Año <br>
+                <b>Fecha de entrega:</b> Día-Mes-Año<br>
+                <b>Solicitante:</b> Investigador <br>
+                <b>Contacto del solicitante:</b> <mail>investigador@correo</mail><br>
+                <b>Centro del solicitante:</b> Entidad<br>
+                <b>Trabajo realizado por:</b> Bioinformático<br>
+                <b>Contacto:</b> <mail>bioinformatico@correo</mail>
+            </data_square>
+            <br>
+            <data_square>
+                <b>Identificador del servicio:</b> CODIGO_SERVICIO<br>
+                <b>Identificador de las lecturas implicadas:</b> CODIGO_RUN <br>
+                <b>Muestras implicadas:</b><br>
+                <input type="checkbox" id="samples_hide" checked="checked"> Mostrar <br>
+                <code>
+                MUESTRA_1 <br>
+                MUESTRA_2 <br>
+                MUESTRA_3
+                </code>
+                <b>Metadatos: </b><br>
+                <input type="checkbox" checked="checked "id="metadata_hide"> Mostrar <br>
+                <code>
+                    sample-id	Column1	Column2<br>
+                    MUESTRA_1   DATA    DATA<br>
+                    MUESTRA_2   DATA    DATA<br>
+                    MUESTRA_3   DATA    DATA
+                </code>
+                <b>Descripción del análisis:</b><br>
+                <description>
+                    DESCRIPCIÓN DE LO REALIZADO (UNA LÍNEA COMO MUCHO)
+                </description>
+                <b>Programas y versiones implicados:</b><br>
+                <code style= display:block>
+                    <b>Control de calidad:</b> FastP (V );  <br>
+                    <b>Visualización del control de calidad:</b>FastQC (v), MultiQC (v)<br>
+                    <b>ETC</b>PROGRAMA (v)<br>
+                    <b>Base de datos:</b> SILVA, asignación mediante Naive Bayes entrenado con esta base de datos
+                    <br>
+                </code>
+                <b>Protocolo: </b><br>
+                    <description>
+                        Protocolo realizado siguiendo los pasos recogidos en el repositorio LINK AL REPOSITORIO</a>
+                    </description>
+                <b>Resultados entregados:</b><br>
+                    <description>
+                        <ul>
+                            <li>ARCHIVO1</li>
+                            <li>ARCHIVO2</li>
+                            <li>ARCHIVO3</li>
+                        </ul>
+                    </description>
+            </data_square>
+
+
+        </subbody>
+
+    </body>
+
+</html>
